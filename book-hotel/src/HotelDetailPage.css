@@ -1,0 +1,144 @@
+.hotel-detail-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hotel-gallery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .main-image {
+    width: 60%;
+    border-radius: 8px;
+  }
+  
+  .thumbnail-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 40%;
+  }
+  
+  .thumbnail-gallery img {
+    width: 100px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .thumbnail-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hotel-details h2 {
+    color: #003366;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-details p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .rating-section {
+    margin-bottom: 20px;
+  }
+  
+  .rating-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    margin: 2px 0;
+  }
+  
+  .progress-bar span {
+    display: inline-block;
+    background-color: #007bff;
+    height: 100%;
+    padding: 0 5px;
+  }
+  
+  .select-room-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .select-room-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  .rating-section {
+    margin-bottom: 20px;
+  }
+  
+  .rating-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .progress-bar {
+    position: relative;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 5px 0;
+  }
+  
+  .progress-bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #4caf50, #00c853); /* สีไล่เฉดจากเขียวเข้มไปเขียวอ่อน */
+    width: 0; /* เริ่มจาก 0 เพื่อทำ animation */
+    animation: fillBar 2s ease forwards; /* เติมเต็มแถบภายใน 2 วินาที */
+  }
+  
+  @keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--progress); }
+  }

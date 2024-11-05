@@ -1,0 +1,353 @@
+/* พื้นหลังของหน้าเว็บและการตั้งค่าพื้นฐาน */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333; /* สีพื้นหลัง */
+  display: flex;
+  justify-content: center;
+}
+
+/* คอนเทนเนอร์หลักของแอปพลิเคชัน */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ส่วนแถบด้านบน (Top Bar) */
+.top-bar {
+  background-color: #003366; /* สีพื้นหลังสีน้ำเงินเข้ม */
+  color: white; /* สีข้อความเป็นสีขาว */
+  padding: 15px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* คอนเทนเนอร์สำหรับหน้า BookingPage */
+.booking-page {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+  color: #333;
+  padding: 20px;
+}
+
+.booking-page h1 {
+  color: #007bff; /* ข้อความสีฟ้า */
+}
+
+/* การ์ดสำหรับแสดงข้อมูลห้องพัก */
+.booking-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #dcdcdc;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* การแสดงรูปห้องพักในการ์ด */
+.room-image {
+  width: 200px;
+  height: auto;
+}
+
+/* คอนเทนเนอร์สำหรับรายละเอียดห้องพัก */
+.room-details {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* หัวเรื่องของรายละเอียดห้องพัก */
+.room-details h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+}
+
+/* รายการสิ่งอำนวยความสะดวกในห้องพัก */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* รายการสิ่งอำนวยความสะดวกแต่ละรายการ */
+.benefit-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* การจัดวางและขนาดของส่วนราคาห้องพัก */
+.price {
+  font-size: 1.8em;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* คอนเทนเนอร์สำหรับปุ่มและการแสดงสถานะการจอง */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* ปุ่มจอง */
+.book-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* การเปลี่ยนสีเมื่อ hover บนปุ่มจอง */
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+/* ปุ่มจองเมื่อห้องเต็ม */
+.book-button.disabled {
+  background-color: gray;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* คะแนนรีวิว */
+.rating {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* ส่วนไอคอนสำหรับใช้ในรายการสิ่งอำนวยความสะดวก */
+.icon {
+  margin-right: 5px;
+  color: #888;
+}
+
+/* การตั้งค่าสำหรับส่วนหัวของเว็บไซต์ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* ชื่อหัวข้อหลัก */
+.header-title {
+  font-size: 1.5em;
+}
+
+/* ปุ่มในส่วนหัว */
+.header-buttons button {
+  background-color: white;
+  color: #003366;
+  border: 1px solid #003366;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+/* การเปลี่ยนสีปุ่มในส่วนหัวเมื่อ hover */
+.header-buttons button:hover {
+  background-color: #003366;
+  color: white;
+}
+
+/* คอนเทนเนอร์สำหรับหน้า PaymentPage */
+.payment-page {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ชื่อหัวข้อใน PaymentPage */
+.payment-page h1 {
+  color: #003366;
+  text-align: center;
+}
+
+/* คอนเทนเนอร์สำหรับตัวเลือกการชำระเงิน */
+.payment-option {
+  margin-bottom: 15px;
+}
+
+.payment-option label {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ฟอร์มข้อมูลบัตรเครดิตและข้อมูลการติดต่อ */
+.credit-card-info,
+.contact-info {
+  margin-top: 15px;
+}
+
+.credit-card-info h4,
+.contact-info h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* ช่องกรอกข้อมูลในฟอร์ม */
+.credit-card-info input,
+.contact-info input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ปุ่มส่งฟอร์ม */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* ปุ่มยกเลิก */
+.cancel-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+/* สถานะการชำระเงินสำเร็จ */
+.payment-success {
+  text-align: center;
+  color: #28a745;
+}
+
+.payment-success h2 {
+  font-size: 1.8em;
+}
+
+/* ช่องกรอกข้อมูลแบบข้อความในฟอร์ม */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+/* ปุ่มสำหรับเลือกห้องพัก */
+.select-room-button {
+  background-color: #007bff; /* สีฟ้าคราม */
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* ขอบโค้งมน */
+  cursor: pointer;
+  transition: all 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* เงาของปุ่ม */
+}
+
+/* เปลี่ยนสีเมื่อ hover */
+.select-room-button:hover {
+  background-color: #0056b3; /* สีฟ้าเข้มขึ้น */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อ hover */
+  transform: translateY(-2px); /* ขยับขึ้นเล็กน้อย */
+}
+
+/* เอฟเฟกต์เมื่อคลิก */
+.select-room-button:active {
+  transform: translateY(2px); /* ขยับลงเล็กน้อยเมื่อคลิก */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* ลดเงา */
+}
+.book-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-button:active {
+  transform: scale(0.95); /* ทำให้ปุ่มเล็กลงเล็กน้อยเมื่อกด */
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* ยกปุ่มขึ้นเล็กน้อยเมื่อ hover */
+}
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+.booking-page.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.dark-mode-toggle {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dark-mode-toggle:hover {
+  background-color: #666;
+}
+

@@ -1,0 +1,22 @@
+/* TopBar.css */
+.top-bar {
+  background-color: #003366; /* พื้นหลังสีน้ำเงินเข้ม */
+  color: white; /* ข้อความสีขาว */
+  padding: 15px 30px; /* ระยะห่างในแถบ */
+  font-size: 24px; /* ขนาดฟอนต์ใหญ่ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* เงาด้านล่าง */
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.top-bar:hover {
+  background-color: #0056b3; /* เปลี่ยนสีเมื่อ hover */
+}
